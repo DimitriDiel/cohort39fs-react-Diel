@@ -1,0 +1,22 @@
+.card-simpson {
+  display: flex;
+  min-height: 400px;
+  width: 400px;
+  gap: 20px;
+  border: 3px solid black;
+  border-radius: 8px;
+  padding: 10px;
+}
+.img-control {
+  display: flex;
+  height: 150px;
+  width: 50px;
+  padding: 10px;
+  gap: 10px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
