@@ -1,10 +1,17 @@
 import "./styles.css";
 import bus from "../../assets/bus.jpg";
+import Button from "../../components/Button/Button";
+import {userData} from "./data"
 
 function Consultation01() {
+  const showButton = true;
+
   return (
     <div className="consultation01-components">
-      <img src={bus} alt="bus joke" />
+      {showButton && <Button />}
+      {/* <img src={bus} alt="bus joke" /> */}
+      <div>{userData.userName}</div>
+      <img src={userData.avatar} alt="avatar Simpson" />
     </div>
   );
 }

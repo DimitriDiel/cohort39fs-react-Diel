@@ -8,3 +8,11 @@
   color: white;
   border-radius: 6px;
 }
+
+.main-button {
+  background-color: rgb(34, 15, 117);
+}
+
+.delete-button {
+  background-color: rgb(152, 11, 25);
+}
