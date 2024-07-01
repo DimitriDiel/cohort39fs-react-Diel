@@ -1,10 +1,9 @@
 import "./styles.css";
 
-function Button({ children, buttonName = "No text" }) {
+function Button({ type = "button", name = "Send", onClick }) {  
   return (
-    <button className={`button-component main-button`}>
-      {/* {children} */}
-      {buttonName}
+    <button onClick={onClick} type={type} className="button-component">
+      {name}
     </button>
   );
 }
