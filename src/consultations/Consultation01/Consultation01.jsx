@@ -1,5 +1,5 @@
 import "./styles.css";
-import bus from "../../assets/bus.jpg";
+// import bus from "../../assets/bus.jpg";
 import Button from "../../components/Button/Button";
 import {userData} from "./data"
 
