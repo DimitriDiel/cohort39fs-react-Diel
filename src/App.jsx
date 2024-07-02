@@ -18,8 +18,8 @@ function App() {
       {/* <Homework02 /> */}
       {/* <Consultation01 /> */}
       {/* <Lesson03 /> */}
-      {/* <Homework03 /> */}
-      <Lesson04 />
+      <Homework03 />
+      {/* <Lesson04 /> */}
     </div>
   );
 }
