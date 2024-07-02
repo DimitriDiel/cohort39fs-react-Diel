@@ -19,24 +19,20 @@ function Feedback() {
   };
 
   const resetResults = () => {
-    setLike((prevValueLike) => {
-      return (prevValueLike = 0);
-    });
-    setDisLike((prevValueDis) => {
-      return (prevValueDis = 0);
-    });
+    setLike(0);
+    setDisLike(0);
   };
 
   return (
     <div className="feedback-wrapper">
       <div className="button-control">
         <Button name="Like" onClick={plusLike} />
-        <p className="count">{countLike}</p>
       </div>
+      <p className="count">{countLike}</p>
       <div className="button-control">
         <Button name="Dislike" onClick={plusDisLike} />
-        <p className="count">{countDisLike}</p>
       </div>
+      <p className="count">{countDisLike}</p>
       <div className="button-control">
         <Button name="Reset Results" onClick={resetResults} />
       </div>
