@@ -1,0 +1,27 @@
+.feedback-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 700px;
+  height: fit-content;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(26, 35, 53);
+  color: white;
+}
+
+.button-control {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 300px;
+  padding: 20px;
+  gap: 15px;
+}
+
+.count {
+  font-size: 40px;
+  color: white;
+}
