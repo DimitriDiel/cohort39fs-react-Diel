@@ -31,11 +31,39 @@ function Lesson05() {
     );
   });
 
+  // const addButton = (buttonNames) => {
+  //   return buttonNames.map((name) => {
+  //     return (
+  //       <Button
+  //         className="button-component"
+  //         name={name}
+  //         onClick={() => {
+  //           addProduct(name);
+  //         }}
+  //         key={v4()}
+  //       />
+  //     );
+  //   });
+  // };
+
+  const buttons = buttonNames.map((name) => {
+    return (
+      <div key={v4()} className="button-control">
+        <Button
+          name={name}
+          onClick={() => {
+            addProduct(name);
+          }}
+        />
+      </div>
+    );
+  });
+
   return (
     <div className="page-wrapper">
       <h1>Menu</h1>
       <div className="button-container">
-        <div className="button-control">
+        {/* <div className="button-control">
           <Button
             name={buttonNames[0]}
             onClick={() => addProduct(buttonNames[0])}
@@ -70,7 +98,9 @@ function Lesson05() {
             name={buttonNames[5]}
             onClick={() => addProduct(buttonNames[5])}
           />
-        </div>
+        </div> */}
+        {/* {addButton(buttonNames)} */}
+        {buttons}
       </div>
       <div className="order-list-container">
         <h2>Order list:</h2>
